@@ -56,9 +56,15 @@
           эффективные решения <br />
           для вашего бизнеса
         </h1>
-        <button class="button">Заказать услугу</button>
+        <button data-modal-open class="open-button">Заказать услугу</button>
+        <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="close-button" data-modal-close>
+          <img class="button-icon" src="./images/button.svg" alt="button" width="11px" height="11px">
+        </button>
+        </div>
+        </div>
       </section>
-
       <section class="container">
         <h2 class="visually-hidden">преимущества</h2>
         <ul class="advantages-list">
@@ -418,8 +424,6 @@
         </ul>
       </div>
     </footer>
-    <div class="backdrop is-hidden">
-      <div class="modal is-hidden"></div>
-    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
